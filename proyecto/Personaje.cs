@@ -13,6 +13,8 @@ namespace EspacioPersonaje
         private string? apodo;
         private DateTime fecha_nacimiento;
 
+        private int edad;
+
         public int Velocidad { get => velocidad; set => velocidad = value; }
         public int Destreza { get => destreza; set => destreza = value; }
         public int Fuerza { get => fuerza; set => fuerza = value; }
@@ -23,14 +25,15 @@ namespace EspacioPersonaje
         public string? Nombre { get => nombre; set => nombre = value; }
         public string? Apodo { get => apodo; set => apodo = value; }
         public DateTime Fecha_Nacimiento { get => fecha_nacimiento; set => fecha_nacimiento = value; }
+        public int Edad { get => edad; set => edad = value; }
 
     }
     class FabricaDePersonajes()
-{
-    public Personaje = CrearPersonaje();
-    Random numRandom=new Random();
-    Personaje Pj = new Personaje();
-    Pj.Apodo="";
+    {
+        public Personaje = CrearPersonaje();
+        Random numRandom = new Random();
+        Personaje Pj = new Personaje();
+        Pj.Apodo="";
     Pj.Velocidad=numRamdon.Next()
 Return Pj;
 }
